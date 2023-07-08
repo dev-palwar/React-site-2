@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.hhai{
+    position: absolute;
+    width: 100%;
+    color: #3e0808;
+    top: 10%;
+    /* border: 2px solid grey; */
+    display: flex;
+    justify-content: center;
+}
+.hhai h1{
+    width: fit-content;
+    background-color: #3ee781;
+    font-size: 5rem;
+    font-family: 'Bangers', cursive;
+}

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: absolute;
+}
+.hamburger-react{
+    z-index: 10;
+    color: black;
+}
+.carousel{
+    height: 100vh;
+}
