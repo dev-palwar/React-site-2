@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack, HStack, VStack, Box } from '@chakra-ui/react';
+import { VStack} from '@chakra-ui/react';
 import Hamburger from 'hamburger-react';
 
 import {
@@ -12,19 +12,15 @@ import {
   DrawerContent,
   DrawerCloseButton,
   Button,
-  Input,
-  ChakraProvider,
-  theme,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  // const btnRef = React.useRef();
 
   return (
     <>
-      <Hamburger size={30} onToggle={onOpen}  />
+      <Hamburger size={30} onToggle={onOpen} />
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent>
@@ -34,32 +30,25 @@ function Navbar() {
           <DrawerBody>
             <VStack spacing={3} alignItems={'flex-start'}>
               <Button
-                // onClick={onClose}
+                onClick={onClose}
                 variant={'ghost'}
                 colorScheme={'purple'}
               >
               <Link to={'/'}>Home</Link>
               </Button>
               <Button
-                // onClick={onClose}
+                onClick={onClose}
                 variant={'ghost'}
                 colorScheme={'purple'}
               >
                 <Link to={'/videos'}>Videos</Link>
               </Button>
               <Button
-                // onClick={onClose}
+                onClick={onClose}
                 variant={'ghost'}
                 colorScheme={'purple'}
               >
               <Link to={'/about'}>About</Link>
-              </Button>
-              <Button
-                // onClick={onClose}
-                variant={'ghost'}
-                colorScheme={'purple'}
-              >
-                Upload
               </Button>
             </VStack>
           </DrawerBody>

@@ -5,6 +5,9 @@ import Videos from './Components/Videos';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './Components/About';
 
+// {
+//     document.getElementsByClassName('chakra-stack')[0].classList.add('videos-css') 
+// }
 function App() {
   return (
     <>
@@ -21,5 +24,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;

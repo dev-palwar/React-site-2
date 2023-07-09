@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 nav{
@@ -12,4 +13,11 @@ nav{
 }
 .carousel{
     height: 100vh;
+}
+video {
+    width: 900px;
+}
+.videos-css{
+    position: relative;
+    top: 100px;
 }

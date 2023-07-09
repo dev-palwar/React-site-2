@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Components/Styles/Home_headings.css'
+import '../Styles/Home_headings.css'
 
 const Home_headings = (props) => {
   return (

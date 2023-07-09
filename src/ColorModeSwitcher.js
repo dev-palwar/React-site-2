@@ -9,13 +9,12 @@ const ColorModeSwitcher = props => {
 
   return (
     <IconButton
-      // size="md"
+      size="md"
       border="1px"
       margin={2}
       fontSize={30}
       aria-label={`Switch to ${text} mode`}
       variant="ghost"
-      color="black"
       zIndex={10}
       marginLeft="2"
       position='absolute'
